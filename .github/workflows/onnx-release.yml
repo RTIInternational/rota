@@ -1,0 +1,66 @@
+name: Add ONNX Files as Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Model Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          lfs: "true"
+          fetch-depth: 2
+      - name: Check if Model Files have changed
+        id: changed-files-specific
+        uses: tj-actions/changed-files@v5.1
+        with:
+          files: |
+            config.json
+            merges.txt
+            model_args.json
+            pytorch_model.bin
+            special_tokens_map.json
+            tokenizer_config.json
+            training_args.bin
+            vocab.json
+      - name: Get current date for release tag
+        id: date
+        run: echo "::set-output name=date::$(date -u +'%Y.%m.%d.%H')"
+      - uses: actions/setup-python@v2
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        with:
+          python-version: "3.7"
+      - uses: actions/cache@v2
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        with:
+          path: ${{ env.pythonLocation }}
+          key: ${{ env.pythonLocation }}-${{ hashFiles('onnx-convert-requirements.txt') }}
+      - name: Install dependencies
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r onnx-convert-requirements.txt
+      - name: Convert Model
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        run: python utils/convert_onnx.py convert_model . onnx/${{ github.event.repository.name }}.onnx
+      - name: GZIP ONNX Files for Release
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        run: |
+          gzip onnx/${{ github.event.repository.name }}.onnx
+          gzip onnx/${{ github.event.repository.name }}-quantized.onnx
+      - name: Release Repo + ONNX under date tag
+        uses: "marvinpinto/action-automatic-releases@latest"
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ steps.date.outputs.date }}"
+          prerelease: false
+          draft: true
+          files: |
+            ${{ github.event.repository.name }}.tar.gz
+            onnx/${{ github.event.repository.name }}.onnx.gz
+            onnx/${{ github.event.repository.name }}-quantized.onnx.gz
