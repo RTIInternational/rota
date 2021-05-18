@@ -49,7 +49,7 @@ The model in this repository is trained on all available data. Because of this, 
 
 | Metric    | precision | recall | f1-score |
 | --------- | --------- | ------ | -------- |
-| macro avg | 0.811     | 0.788  | 0.795    |
+| macro avg | 0.811     | 0.786  | 0.794    |
 
 
 *Note*: These are the average of the values *per fold*, so *macro avg* is the average of the macro average of all categories per fold.
@@ -58,90 +58,90 @@ The model in this repository is trained on all available data. Because of this, 
 
 | Category                                               | precision | recall | f1-score | support |
 | ------------------------------------------------------ | --------- | ------ | -------- | ------- |
-| AGGRAVATED ASSAULT                                     | 0.95      | 0.957  | 0.954    | 4085    |
-| ARMED ROBBERY                                          | 0.958     | 0.957  | 0.957    | 1021    |
-| ARSON                                                  | 0.951     | 0.953  | 0.952    | 344     |
-| ASSAULTING PUBLIC OFFICER                              | 0.921     | 0.905  | 0.913    | 588     |
-| AUTO THEFT                                             | 0.962     | 0.963  | 0.963    | 1660    |
-| BLACKMAIL/EXTORTION/INTIMIDATION                       | 0.868     | 0.878  | 0.873    | 627     |
-| BRIBERY AND CONFLICT OF INTEREST                       | 0.772     | 0.821  | 0.795    | 216     |
-| BURGLARY                                               | 0.982     | 0.98   | 0.981    | 2214    |
-| CHILD ABUSE                                            | 0.793     | 0.776  | 0.784    | 139     |
-| COCAINE OR CRACK VIOLATION OFFENSE UNSPECIFIED         | 0.868     | 0.865  | 0.866    | 47      |
-| COMMERCIALIZED VICE                                    | 0.811     | 0.777  | 0.793    | 666     |
-| CONTEMPT OF COURT                                      | 0.983     | 0.987  | 0.985    | 2952    |
-| CONTRIBUTING TO DELINQUENCY OF A MINOR                 | 0.454     | 0.379  | 0.396    | 50      |
-| CONTROLLED SUBSTANCE - OFFENSE UNSPECIFIED             | 0.839     | 0.78   | 0.808    | 280     |
+| AGGRAVATED ASSAULT                                     | 0.954     | 0.954  | 0.954    | 4085    |
+| ARMED ROBBERY                                          | 0.961     | 0.955  | 0.958    | 1021    |
+| ARSON                                                  | 0.946     | 0.954  | 0.95     | 344     |
+| ASSAULTING PUBLIC OFFICER                              | 0.914     | 0.905  | 0.909    | 588     |
+| AUTO THEFT                                             | 0.962     | 0.962  | 0.962    | 1660    |
+| BLACKMAIL/EXTORTION/INTIMIDATION                       | 0.872     | 0.871  | 0.872    | 627     |
+| BRIBERY AND CONFLICT OF INTEREST                       | 0.784     | 0.796  | 0.79     | 216     |
+| BURGLARY                                               | 0.979     | 0.981  | 0.98     | 2214    |
+| CHILD ABUSE                                            | 0.805     | 0.78   | 0.792    | 139     |
+| COCAINE OR CRACK VIOLATION OFFENSE UNSPECIFIED         | 0.827     | 0.815  | 0.821    | 47      |
+| COMMERCIALIZED VICE                                    | 0.818     | 0.788  | 0.802    | 666     |
+| CONTEMPT OF COURT                                      | 0.982     | 0.987  | 0.984    | 2952    |
+| CONTRIBUTING TO DELINQUENCY OF A MINOR                 | 0.544     | 0.333  | 0.392    | 50      |
+| CONTROLLED SUBSTANCE - OFFENSE UNSPECIFIED             | 0.864     | 0.791  | 0.826    | 280     |
 | COUNTERFEITING (FEDERAL ONLY)                          | 0         | 0      | 0        | 2       |
-| DESTRUCTION OF PROPERTY                                | 0.967     | 0.97   | 0.969    | 2560    |
-| DRIVING UNDER INFLUENCE - DRUGS                        | 0.641     | 0.616  | 0.625    | 34      |
-| DRIVING UNDER THE INFLUENCE                            | 0.944     | 0.95   | 0.947    | 2195    |
-| DRIVING WHILE INTOXICATED                              | 0.99      | 0.978  | 0.984    | 2391    |
-| DRUG OFFENSES - VIOLATION/DRUG UNSPECIFIED             | 0.905     | 0.911  | 0.908    | 3100    |
-| DRUNKENNESS/VAGRANCY/DISORDERLY CONDUCT                | 0.853     | 0.862  | 0.857    | 380     |
-| EMBEZZLEMENT                                           | 0.86      | 0.762  | 0.808    | 100     |
+| DESTRUCTION OF PROPERTY                                | 0.97      | 0.968  | 0.969    | 2560    |
+| DRIVING UNDER INFLUENCE - DRUGS                        | 0.567     | 0.603  | 0.581    | 34      |
+| DRIVING UNDER THE INFLUENCE                            | 0.951     | 0.946  | 0.949    | 2195    |
+| DRIVING WHILE INTOXICATED                              | 0.986     | 0.981  | 0.984    | 2391    |
+| DRUG OFFENSES - VIOLATION/DRUG UNSPECIFIED             | 0.903     | 0.911  | 0.907    | 3100    |
+| DRUNKENNESS/VAGRANCY/DISORDERLY CONDUCT                | 0.856     | 0.861  | 0.858    | 380     |
+| EMBEZZLEMENT                                           | 0.865     | 0.759  | 0.809    | 100     |
 | EMBEZZLEMENT (FEDERAL ONLY)                            | 0         | 0      | 0        | 1       |
-| ESCAPE FROM CUSTODY                                    | 0.989     | 0.99   | 0.99     | 4035    |
-| FAMILY RELATED OFFENSES                                | 0.744     | 0.768  | 0.756    | 442     |
-| FELONY - UNSPECIFIED                                   | 0.665     | 0.762  | 0.709    | 122     |
-| FLIGHT TO AVOID PROSECUTION                            | 0.43      | 0.434  | 0.431    | 38      |
-| FORCIBLE SODOMY                                        | 0.773     | 0.837  | 0.802    | 76      |
+| ESCAPE FROM CUSTODY                                    | 0.988     | 0.991  | 0.989    | 4035    |
+| FAMILY RELATED OFFENSES                                | 0.739     | 0.773  | 0.755    | 442     |
+| FELONY - UNSPECIFIED                                   | 0.692     | 0.735  | 0.712    | 122     |
+| FLIGHT TO AVOID PROSECUTION                            | 0.46      | 0.407  | 0.425    | 38      |
+| FORCIBLE SODOMY                                        | 0.82      | 0.8    | 0.809    | 76      |
 | FORGERY (FEDERAL ONLY)                                 | 0         | 0      | 0        | 2       |
-| FORGERY/FRAUD                                          | 0.909     | 0.928  | 0.918    | 4687    |
+| FORGERY/FRAUD                                          | 0.911     | 0.928  | 0.919    | 4687    |
 | FRAUD (FEDERAL ONLY)                                   | 0         | 0      | 0        | 2       |
-| GRAND LARCENY - THEFT OVER $200                        | 0.959     | 0.972  | 0.966    | 2412    |
-| HABITUAL OFFENDER                                      | 0.748     | 0.656  | 0.695    | 53      |
-| HEROIN VIOLATION - OFFENSE UNSPECIFIED                 | 0.877     | 0.777  | 0.82     | 24      |
-| HIT AND RUN DRIVING                                    | 0.927     | 0.933  | 0.93     | 303     |
-| HIT/RUN DRIVING - PROPERTY DAMAGE                      | 0.929     | 0.924  | 0.926    | 362     |
-| IMMIGRATION VIOLATIONS                                 | 0.778     | 0.616  | 0.681    | 19      |
-| INVASION OF PRIVACY                                    | 0.925     | 0.923  | 0.924    | 1235    |
-| JUVENILE OFFENSES                                      | 0.9       | 0.871  | 0.883    | 144     |
-| KIDNAPPING                                             | 0.926     | 0.929  | 0.927    | 553     |
-| LARCENY/THEFT - VALUE UNKNOWN                          | 0.953     | 0.946  | 0.95     | 3175    |
-| LEWD ACT WITH CHILDREN                                 | 0.786     | 0.846  | 0.814    | 596     |
-| LIQUOR LAW VIOLATIONS                                  | 0.731     | 0.762  | 0.746    | 214     |
-| MANSLAUGHTER - NON-VEHICULAR                           | 0.661     | 0.803  | 0.725    | 139     |
-| MANSLAUGHTER - VEHICULAR                               | 0.763     | 0.854  | 0.803    | 117     |
-| MARIJUANA/HASHISH VIOLATION - OFFENSE UNSPECIFIED      | 0.778     | 0.675  | 0.718    | 62      |
-| MISDEMEANOR UNSPECIFIED                                | 0.616     | 0.256  | 0.357    | 57      |
-| MORALS/DECENCY - OFFENSE                               | 0.759     | 0.763  | 0.761    | 412     |
-| MURDER                                                 | 0.965     | 0.922  | 0.943    | 621     |
-| OBSTRUCTION - LAW ENFORCEMENT                          | 0.945     | 0.947  | 0.946    | 4220    |
-| OFFENSES AGAINST COURTS, LEGISLATURES, AND COMMISSIONS | 0.882     | 0.897  | 0.889    | 1965    |
-| PAROLE VIOLATION                                       | 0.968     | 0.949  | 0.958    | 946     |
-| PETTY LARCENY - THEFT UNDER $200                       | 0.987     | 0.768  | 0.864    | 139     |
-| POSSESSION/USE - COCAINE OR CRACK                      | 0.9       | 0.928  | 0.913    | 68      |
-| POSSESSION/USE - DRUG UNSPECIFIED                      | 0.618     | 0.561  | 0.586    | 189     |
-| POSSESSION/USE - HEROIN                                | 0.917     | 0.839  | 0.876    | 25      |
-| POSSESSION/USE - MARIJUANA/HASHISH                     | 0.975     | 0.973  | 0.974    | 556     |
-| POSSESSION/USE - OTHER CONTROLLED SUBSTANCES           | 0.976     | 0.965  | 0.97     | 3271    |
-| PROBATION VIOLATION                                    | 0.958     | 0.956  | 0.957    | 1158    |
-| PROPERTY OFFENSES - OTHER                              | 0.892     | 0.863  | 0.878    | 446     |
-| PUBLIC ORDER OFFENSES - OTHER                          | 0.706     | 0.717  | 0.711    | 1871    |
+| GRAND LARCENY - THEFT OVER $200                        | 0.957     | 0.973  | 0.965    | 2412    |
+| HABITUAL OFFENDER                                      | 0.742     | 0.627  | 0.679    | 53      |
+| HEROIN VIOLATION - OFFENSE UNSPECIFIED                 | 0.879     | 0.811  | 0.843    | 24      |
+| HIT AND RUN DRIVING                                    | 0.922     | 0.94   | 0.931    | 303     |
+| HIT/RUN DRIVING - PROPERTY DAMAGE                      | 0.929     | 0.918  | 0.923    | 362     |
+| IMMIGRATION VIOLATIONS                                 | 0.84      | 0.609  | 0.697    | 19      |
+| INVASION OF PRIVACY                                    | 0.927     | 0.923  | 0.925    | 1235    |
+| JUVENILE OFFENSES                                      | 0.928     | 0.866  | 0.895    | 144     |
+| KIDNAPPING                                             | 0.937     | 0.93   | 0.933    | 553     |
+| LARCENY/THEFT - VALUE UNKNOWN                          | 0.955     | 0.945  | 0.95     | 3175    |
+| LEWD ACT WITH CHILDREN                                 | 0.775     | 0.85   | 0.811    | 596     |
+| LIQUOR LAW VIOLATIONS                                  | 0.741     | 0.768  | 0.755    | 214     |
+| MANSLAUGHTER - NON-VEHICULAR                           | 0.626     | 0.802  | 0.701    | 139     |
+| MANSLAUGHTER - VEHICULAR                               | 0.79      | 0.853  | 0.819    | 117     |
+| MARIJUANA/HASHISH VIOLATION - OFFENSE UNSPECIFIED      | 0.741     | 0.662  | 0.699    | 62      |
+| MISDEMEANOR UNSPECIFIED                                | 0.63      | 0.243  | 0.347    | 57      |
+| MORALS/DECENCY - OFFENSE                               | 0.774     | 0.764  | 0.769    | 412     |
+| MURDER                                                 | 0.965     | 0.915  | 0.939    | 621     |
+| OBSTRUCTION - LAW ENFORCEMENT                          | 0.939     | 0.947  | 0.943    | 4220    |
+| OFFENSES AGAINST COURTS, LEGISLATURES, AND COMMISSIONS | 0.881     | 0.895  | 0.888    | 1965    |
+| PAROLE VIOLATION                                       | 0.97      | 0.953  | 0.962    | 946     |
+| PETTY LARCENY - THEFT UNDER $200                       | 0.965     | 0.761  | 0.85     | 139     |
+| POSSESSION/USE - COCAINE OR CRACK                      | 0.893     | 0.928  | 0.908    | 68      |
+| POSSESSION/USE - DRUG UNSPECIFIED                      | 0.624     | 0.535  | 0.572    | 189     |
+| POSSESSION/USE - HEROIN                                | 0.884     | 0.852  | 0.866    | 25      |
+| POSSESSION/USE - MARIJUANA/HASHISH                     | 0.977     | 0.97   | 0.973    | 556     |
+| POSSESSION/USE - OTHER CONTROLLED SUBSTANCES           | 0.975     | 0.965  | 0.97     | 3271    |
+| PROBATION VIOLATION                                    | 0.963     | 0.953  | 0.958    | 1158    |
+| PROPERTY OFFENSES - OTHER                              | 0.901     | 0.87   | 0.885    | 446     |
+| PUBLIC ORDER OFFENSES - OTHER                          | 0.7       | 0.721  | 0.71     | 1871    |
 | RACKETEERING/EXTORTION (FEDERAL ONLY)                  | 0         | 0      | 0        | 2       |
-| RAPE - FORCE                                           | 0.841     | 0.871  | 0.856    | 641     |
-| RAPE - STATUTORY - NO FORCE                            | 0.714     | 0.551  | 0.619    | 140     |
-| REGULATORY OFFENSES (FEDERAL ONLY)                     | 0.8       | 0.558  | 0.657    | 70      |
-| RIOTING                                                | 0.785     | 0.605  | 0.68     | 119     |
-| SEXUAL ASSAULT - OTHER                                 | 0.829     | 0.839  | 0.834    | 971     |
-| SIMPLE ASSAULT                                         | 0.977     | 0.967  | 0.972    | 4577    |
-| STOLEN PROPERTY - RECEIVING                            | 0.953     | 0.955  | 0.954    | 1193    |
-| STOLEN PROPERTY - TRAFFICKING                          | 0.899     | 0.875  | 0.887    | 491     |
-| TAX LAW (FEDERAL ONLY)                                 | 0.474     | 0.177  | 0.256    | 30      |
-| TRAFFIC OFFENSES - MINOR                               | 0.976     | 0.975  | 0.975    | 8699    |
-| TRAFFICKING - COCAINE OR CRACK                         | 0.893     | 0.944  | 0.918    | 185     |
-| TRAFFICKING - DRUG UNSPECIFIED                         | 0.729     | 0.783  | 0.755    | 516     |
-| TRAFFICKING - HEROIN                                   | 0.874     | 0.902  | 0.887    | 54      |
-| TRAFFICKING - OTHER CONTROLLED SUBSTANCES              | 0.963     | 0.953  | 0.958    | 2832    |
-| TRAFFICKING MARIJUANA/HASHISH                          | 0.919     | 0.934  | 0.926    | 255     |
-| TRESPASSING                                            | 0.974     | 0.982  | 0.978    | 1916    |
-| UNARMED ROBBERY                                        | 0.941     | 0.935  | 0.938    | 377     |
-| UNAUTHORIZED USE OF VEHICLE                            | 0.929     | 0.911  | 0.92     | 304     |
-| UNSPECIFIED HOMICIDE                                   | 0.641     | 0.591  | 0.614    | 60      |
-| VIOLENT OFFENSES - OTHER                               | 0.82      | 0.817  | 0.818    | 606     |
-| VOLUNTARY/NONNEGLIGENT MANSLAUGHTER                    | 0.641     | 0.559  | 0.596    | 54      |
-| WEAPON OFFENSE                                         | 0.944     | 0.947  | 0.945    | 2466    |
+| RAPE - FORCE                                           | 0.842     | 0.873  | 0.857    | 641     |
+| RAPE - STATUTORY - NO FORCE                            | 0.707     | 0.55   | 0.611    | 140     |
+| REGULATORY OFFENSES (FEDERAL ONLY)                     | 0.847     | 0.567  | 0.674    | 70      |
+| RIOTING                                                | 0.784     | 0.605  | 0.68     | 119     |
+| SEXUAL ASSAULT - OTHER                                 | 0.836     | 0.836  | 0.836    | 971     |
+| SIMPLE ASSAULT                                         | 0.976     | 0.967  | 0.972    | 4577    |
+| STOLEN PROPERTY - RECEIVING                            | 0.959     | 0.957  | 0.958    | 1193    |
+| STOLEN PROPERTY - TRAFFICKING                          | 0.902     | 0.888  | 0.895    | 491     |
+| TAX LAW (FEDERAL ONLY)                                 | 0.373     | 0.233  | 0.286    | 30      |
+| TRAFFIC OFFENSES - MINOR                               | 0.974     | 0.977  | 0.976    | 8699    |
+| TRAFFICKING - COCAINE OR CRACK                         | 0.896     | 0.951  | 0.922    | 185     |
+| TRAFFICKING - DRUG UNSPECIFIED                         | 0.709     | 0.795  | 0.749    | 516     |
+| TRAFFICKING - HEROIN                                   | 0.871     | 0.92   | 0.894    | 54      |
+| TRAFFICKING - OTHER CONTROLLED SUBSTANCES              | 0.963     | 0.954  | 0.959    | 2832    |
+| TRAFFICKING MARIJUANA/HASHISH                          | 0.921     | 0.943  | 0.932    | 255     |
+| TRESPASSING                                            | 0.974     | 0.98   | 0.977    | 1916    |
+| UNARMED ROBBERY                                        | 0.941     | 0.939  | 0.94     | 377     |
+| UNAUTHORIZED USE OF VEHICLE                            | 0.94      | 0.908  | 0.924    | 304     |
+| UNSPECIFIED HOMICIDE                                   | 0.61      | 0.554  | 0.577    | 60      |
+| VIOLENT OFFENSES - OTHER                               | 0.827     | 0.817  | 0.822    | 606     |
+| VOLUNTARY/NONNEGLIGENT MANSLAUGHTER                    | 0.619     | 0.513  | 0.542    | 54      |
+| WEAPON OFFENSE                                         | 0.943     | 0.949  | 0.946    | 2466    |
 
 *Note: `support` is the average number of observations predicted on per fold, so the total number of observations per class is roughly 3x `support`.*
 
@@ -151,9 +151,9 @@ If we interpret the classification probability as a confidence score, we can use
 
 |     | cutoff | percent retained | mcc   | acc   |
 | --- | ------ | ---------------- | ----- | ----- |
-| 0   | 0.85   | 0.952            | 0.959 | 0.961 |
-| 1   | 0.90   | 0.944            | 0.963 | 0.965 |
-| 2   | 0.95   | 0.928            | 0.969 | 0.971 |
+| 0   | 0.85   | 0.952            | 0.96  | 0.961 |
+| 1   | 0.9    | 0.943            | 0.964 | 0.965 |
+| 2   | 0.95   | 0.928            | 0.97  | 0.971 |
 | 3   | 0.975  | 0.912            | 0.975 | 0.976 |
-| 4   | 0.99   | 0.885            | 0.982 | 0.983 |
-| 5   | 0.999  | 0.737            | 0.996 | 0.996 |
+| 4   | 0.99   | 0.886            | 0.982 | 0.983 |
+| 5   | 0.999  | 0.733            | 0.995 | 0.996 |
